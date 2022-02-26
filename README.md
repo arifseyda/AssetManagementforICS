@@ -66,16 +66,6 @@ In order to perform these operations, data such as location and process are assi
 
 # The other features of asset management tool 
 
-# Export Json format
-
-When we click the "Json formatında dışa aktar (export in json format)" button, the information in the database is written to the sniffer.json file as json. This sniffer.json file can be visualized in Kibana. While monitoring in Kibana, the IP addresses in your own system are known. If different ip addresses come from these ip addresses, it can be understood that an attack can be made. 
-
-![image](https://user-images.githubusercontent.com/47140243/155844050-5f9206f0-44aa-4513-a7a4-3d532b9e3b85.png)
-
-A dashboard screen with ip addresses, mac addresses, vendor names and protocol information has been created in Kibana. This dashboard part consists of data in sniffer.json. 
-
-![image](https://user-images.githubusercontent.com/47140243/155855002-31cd5a06-76f6-4737-a3a4-8e07bc43bd76.png)
-
 
 # Intrusion Detection System Based on Asset Management 
 
@@ -103,4 +93,15 @@ In order to be able to do these operations, when the checkbox is selected, that 
 In Snort and Suricata Integration, the HOME_NET fields are different. According to them, the ip addresses in the file that writes the HOME_NET fields ip addresses are assigned to a string. It is said to find the HOME_NET line in the conf file of Snort IDS and in the yaml file of Suricata IDS, delete the HOME_NET I in that line and replace it with the HOME_NET string containing the ip addresses in the white_list.rules file we created. 
 
 In Snort and Suricata IDS, the assets we want to protect were written in the HOME_NET field. We can detect attacks by running Snort and Suricata IDS. We can send the created log files to the log management tools. 
+
+# Export Json format
+
+When we click the "Json formatında dışa aktar (export in json format)" button, the information in the database is written to the sniffer.json file as json. This sniffer.json file can be visualized in Kibana. While monitoring in Kibana, the IP addresses in your own system are known. If different ip addresses come from these ip addresses, it can be understood that an attack can be made. 
+
+![image](https://user-images.githubusercontent.com/47140243/155844050-5f9206f0-44aa-4513-a7a4-3d532b9e3b85.png)
+
+A dashboard screen with ip addresses, mac addresses, vendor names and protocol information has been created in Kibana. This dashboard part consists of data in sniffer.json. 
+
+![image](https://user-images.githubusercontent.com/47140243/155855002-31cd5a06-76f6-4737-a3a4-8e07bc43bd76.png)
+
 
