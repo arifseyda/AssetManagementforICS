@@ -8,17 +8,17 @@ In industrial control systems, passive monitoring is to enable analysis of netwo
 
 ![image](https://user-images.githubusercontent.com/47140243/155843390-a6927ef2-7ef0-4d66-b4a5-99bc05c51a14.png)
 
-When we click the start scanning button, packetsniffer.py is running. In Packetsniffer.py, there is a separate if block for Ethernet, a separate if block for Ip, and a separate if block for TCP.
+When we click the "Taramaya Basla (start scanning)" button, packetsniffer.py is running. In Packetsniffer.py, there is a separate if block for Ethernet, a separate if block for Ip, and a separate if block for TCP.
 
-It is the conversion of the data from the Tap device into an Ethernet frame in the Ethernet if block. It is said to parse the mac address part from the Ethernet framework. Thanks to this mac address, the vendor's name of the product also appears. The manufacturer provides the first 24 bits of the Mac address. This mac address has been found by the vendor name with the help of an API. 
+It is the conversion of the data from the Tap device into an Ethernet frame in the Ethernet if block. It is said to parse the mac address part from the Ethernet framework. Thanks to this mac address, the vendor's name of the product also appears. The vendor provides the first 24 bits of the Mac address. This mac address has been found by the vendor name with the help of an API. 
 
 The data field of the Ethernet frame is taken in the if block created for Ip. The thread head included in the thread package is ready to be parsed. The ip address part is taken in the ip header.
 
 The data field in the Ip packet is taken in the if block created for TCP. The TCP header in the TCP segment is ready to be parsed. The port number field is parsed from the TCP header. The port number from the system is sent to the database we created, which contains the port number and the protocol name. As a result of this sent port number, the protocol name is returned.
 
-A string has been created to send mac addresses, manufacturer names, ip addresses and protocol names to the database. This sequence is controlled. If there is the same ip address and mac address data in this array, it is called adding to the array again. The data added to each array forms the column of a row in the database. 
+A string has been created to send mac addresses, vendor names, ip addresses and protocol names to the database. This sequence is controlled. If there is the same ip address and mac address data in this array, it is called adding to the array again. The data added to each array forms the column of a row in the database. 
 
-With the Start Scan button, 500 packets are listened. After 500 packets, the packet listening process ends. When we click the Print button, if a new device in the system is discovered or a new data is added to the database, it allows us to see it on the form screen. 
+With the "Taramaya Basla (Start Scan)" button, 500 packets are listened. After 500 packets, the packet listening process ends. When we click the "Yazdır (Print)" button, if a new device in the system is discovered or a new data is added to the database, it allows us to see it on the form screen. 
 
 # Active Probing
 
