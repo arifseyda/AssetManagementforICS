@@ -1,4 +1,4 @@
-# AssetManagementforICS
+# Asset Management for ICS
 
 This asset management tool was developed in the National Testbed Center project (Center SAU - https://center.sakarya.edu.tr). The developed software has been tested in this test bed center. 
 
