@@ -69,6 +69,11 @@ When we click the "Json formatında dışa aktar (export in json format)" button
 
 ![image](https://user-images.githubusercontent.com/47140243/155844050-5f9206f0-44aa-4513-a7a4-3d532b9e3b85.png)
 
+A dashboard screen with ip addresses, mac addresses, vendor names and protocol information has been created in Kibana. This dashboard part consists of data in sniffer.json. 
+
+![image](https://user-images.githubusercontent.com/47140243/155855002-31cd5a06-76f6-4737-a3a4-8e07bc43bd76.png)
+
+
 # Intrusion Detection System Based on Asset Management 
 
 When we select each of the checkboxes in the whitelist section in the image below, it is written to the white_list.rules file. When a selected checkbox on the whitelist line is pressed again, the tick is removed and the ip address on the checkbox line in white_list.rules is removed from the file. 
