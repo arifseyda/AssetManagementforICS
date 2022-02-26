@@ -39,7 +39,7 @@ The answers returned from the active query are usually put in the details sectio
 
 ![image](https://user-images.githubusercontent.com/47140243/155843613-0c32e6bd-0498-40f0-a560-cbd6b5ae39d9.png)
 
-When the Show Details button is pressed, a new form appears. When we enter the id (asset number) in this form, we see more detailed, that is, active query results. 
+When the "Detayları Göster (Show Details)" button is pressed, a new form appears. When we enter the id (asset number) in this form, we see more detailed, that is, active query results. 
 
 ![image](https://user-images.githubusercontent.com/47140243/155843637-e8609db6-46d8-4b91-8872-b433e69852ec.png)
 
@@ -58,11 +58,11 @@ If we want to add to this data, you need to click on the "Duzenle (Edit)" button
 
 ![image](https://user-images.githubusercontent.com/47140243/155843974-e732dd73-117f-457d-818b-33e21b725f5f.png)
 
-When we click the "Yazdır (Print)" button after entering the data, the data returned from the Edit section appear as follows. 
+When we click the "Yazdır (Print)" button after entering the data, the data returned from the "Duzenle (Edit)" section appear as follows. 
 
 ![image](https://user-images.githubusercontent.com/47140243/155844007-e1380570-6d74-4d47-b6f8-540ea19c11c4.png)
 
-In order to perform these operations, data such as location and process are assigned to the database in packetsniffer.py. In the data entered in the Edit button, the database is updated according to the id. In this way, we can see the new data when we click the Print button. 
+In order to perform these operations, data such as location and process are assigned to the database in packetsniffer.py. In the data entered in the "Duzenle (Edit)" button, the database is updated according to the id. In this way, we can see the new data when we click the "Yazdır (Print)" button. 
 
 # The other features of asset management tool 
 
