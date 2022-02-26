@@ -82,6 +82,7 @@ The 5 selected IP addresses are written to Whitelist.rules as seen below.
 
 ![image](https://user-images.githubusercontent.com/47140243/155844219-472f88c6-86f9-4510-924d-e80e2e6f979c.png)
 
+
 Saying Snort and Suricata Integration, these ip addresses are written in /etc/snort/snort.conf and /etc/suricata/suricata.yaml files. These configuration files are already essential for Snort and Suricata to work. 
 
 ![image](https://user-images.githubusercontent.com/47140243/155844234-2048dcc3-4a2b-45c0-a7d6-666f19f24c80.png)
@@ -97,4 +98,6 @@ It is seen that the ip addresses in White_list.rules are written to the Snort.co
 In order to be able to do these operations, when the checkbox is selected, that line goes to a function. In this function, the ip address of the checkbox selected line is taken. If this ip address is not in the written file, it is called write to the file. 
 
 In Snort and Suricata Integration, the HOME_NET fields are different. According to them, the ip addresses in the file that writes the HOME_NET fields ip addresses are assigned to a string. It is said to find the HOME_NET line in the conf file of Snort IDS and in the yaml file of Suricata IDS, delete the HOME_NET I in that line and replace it with the HOME_NET string containing the ip addresses in the white_list.rules file we created. 
+
+In Snort and Suricata IDS, the assets we want to protect were written in the HOME_NET field. We can detect attacks by running Snort and Suricata IDS. We can send the created log files to the log management tools. 
 
