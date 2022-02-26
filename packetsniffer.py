@@ -1,7 +1,6 @@
 '''
-@Description: Real time modbus packet parsed and the result written to csv file
 @Requirement: pyshark
-@Author: FST
+
 '''
 
 TAB_1 = '\t - '
