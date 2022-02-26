@@ -1,7 +1,5 @@
 '''
-@Description: Real time modbus packet parsed and the result written to csv file
 @Requirement: pyshark
-@Author: FST
 '''
 
 import csv
@@ -93,7 +91,7 @@ if __name__ == '__main__':
     parser = PacketParser()
     try:
         capture = pyshark.LiveCapture(interface='ens33')
-        for pkt in capture.sniff_continuously(packet_count=2):
+        for pkt in capture.sniff_continuously(packet_count=500):
             parser.packet_parse(pkt)
         print(pretty_format)
         parser.write_to_csv(pretty_format, "modbus")
