@@ -32,6 +32,7 @@ In the project we want to develop, both protocol-based and product-based nse scr
 
 For example, s7-info is an nse script used to get information inside Siemens S7 devices. Since the version number is 2.6.0, that is low, a lot of information can be returned. However, in devices with higher version number, Module, Basic Hardware and version part return as the answer of the query. 
 
+
 ![image](https://user-images.githubusercontent.com/47140243/155843565-b53cd6b7-cf8c-4720-b702-73a2a9b11b6c.png)
 
 The answers returned from the active query are usually put in the details section in large companies. In the project we want to develop, when the "Detayları Göster (Show Details)" button in the image below is pressed, the answers appear if an active query has been made. 
