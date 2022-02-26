@@ -2,6 +2,8 @@
 
 This asset management tool was developed in the National Testbed Center project (Center SAU - https://center.sakarya.edu.tr). The developed software has been tested in this test bed center. 
 
+Python pyshark library, which uses tshark infrastructure, is used to listen to the network. The pyqt library was used to create the visualization. 
+
 In this asset management tool, 3 different methods are used to discover and make sense of assets. These methods are passive listening, active querying and making sense of metadata information. 
 
 # Passive Listening 
