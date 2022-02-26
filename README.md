@@ -1,5 +1,7 @@
 # AssetManagementforICS
 
+In this asset management tool, 3 different methods are used to discover and make sense of assets. These methods are passive listening, active querying and making sense of metadata information. 
+
 # Passive Listening 
 
 In industrial control systems, passive monitoring is to enable analysis of network traffic by listening to Tap devices. With the help of the analyzed traffic tshark, the data was parsed with the Pyshark library in the Python programming language. The parsed data are taken as mac addresses, ip addresses, protocol names and vendor names as in the image below. The asset number is the id number created in the database. This id number increases automatically. 
@@ -90,17 +92,4 @@ It is seen that the ip addresses in White_list.rules are written to the Snort.co
 In order to be able to do these operations, when the checkbox is selected, that line goes to a function. In this function, the ip address of the checkbox selected line is taken. If this ip address is not in the written file, it is called write to the file. 
 
 In Snort and Suricata Integration, the HOME_NET fields are different. According to them, the ip addresses in the file that writes the HOME_NET fields ip addresses are assigned to a string. It is said to find the HOME_NET line in the conf file of Snort IDS and in the yaml file of Suricata IDS, delete the HOME_NET I in that line and replace it with the HOME_NET string containing the ip addresses in the white_list.rules file we created. 
-
-
-
-
-
-
-
-
-
-
-
-
-
 
