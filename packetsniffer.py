@@ -1,6 +1,5 @@
 '''
 @Requirement: pyshark
-
 '''
 
 TAB_1 = '\t - '
